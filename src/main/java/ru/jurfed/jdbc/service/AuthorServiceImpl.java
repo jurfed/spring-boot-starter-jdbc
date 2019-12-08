@@ -21,10 +21,7 @@ public class AuthorServiceImpl implements AuthorService {
     @Autowired
     NamedParameterJdbcOperations namedParameterJdbcOperations;
 
-    JdbcOperations jdbcOperations;
-
     public AuthorServiceImpl(JdbcOperations jdbcOperations) {
-        this.jdbcOperations = jdbcOperations;
     }
 
     @Override

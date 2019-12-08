@@ -57,6 +57,7 @@ public class SpringTest {
         System.out.println(genreService.getGenreById(100));
     }
 
+
     @Test
     public void getAuthorById(){
         System.out.println(authorService.getAuthorsById(1));

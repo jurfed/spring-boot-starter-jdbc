@@ -44,8 +44,6 @@ public class BookServiceImpl implements BookService {
     @Override
     public void createTable() {
         Map<String, Object> params = new HashMap<>();
-        SqlParameterSource sqlParameterSource =new MapSqlParameterSource();
-        SqlParameterSource namedParameters = new MapSqlParameterSource("first_name", 1);
 
         jdbcOperations.execute("DROP TABLE IF EXISTS Temptable");
         jdbcOperations.execute("create table Temptable (id integer primary key)");
