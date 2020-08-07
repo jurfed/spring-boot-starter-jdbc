@@ -43,8 +43,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void createTable() {
-        Map<String, Object> params = new HashMap<>();
-
         jdbcOperations.execute("DROP TABLE IF EXISTS Temptable");
         jdbcOperations.execute("create table Temptable (id integer primary key)");
         jdbcOperations.execute("insert into Temptable(id) values(100)");

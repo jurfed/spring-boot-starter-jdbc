@@ -15,6 +15,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) throws SQLException {
+        Console.main(args);
         ApplicationContext context = SpringApplication.run(Main.class);
 
         BookService books = context.getBean(BookService.class);
@@ -34,6 +35,6 @@ public class Main {
         System.out.println(books.getBooks());
 
         System.out.println("book's size=  " + books.getCount());
-        Console.main(args);
+
     }
 }
